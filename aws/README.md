@@ -6,21 +6,24 @@
 | Variable        | Description                                                                       |
 | --------------- | --------------------------------------------------------------------------------- |
 | {project}       | プロジェクト名                                                                    |
-| {env}           | 環境名 [dev, stg, prd]                                                            |
+| {env}           | 環境名 [dev, stg, prod]                                                           |
 | {n}             | 1 から始まるシーケンシャルな数字                                                  |
 | {network-layer} | ネットワーク層 [public, protected, private]                                       |
 | {region}        | リージョン                                                                        |
 | {role}          | ロール/役割 [migration-server, contents-server, main-db, frontend, backend...etc] |
-| {account-id}    | アカウント ID                                                                     |
+| {account-id}    | AWS アカウント ID ( サインイン後、右上メニューより確認可 )                        |
+| {target}        | ターゲット [alb, clb, ec2, rds, s3, cf, amplify, api, lambda, dynamodb, log]      |
 
 | Kind                 | Example name                                       |
 | -------------------- | -------------------------------------------------- |
 | VPC                  | {project}-{env}-vpc                                |
-| Subnet               | {project}-{env}-subnet{n}-{network-layer}-{region} |
-| Route Table          | {project}-{env}-rtb-{network-layer}-{region}       |
+| Subnet               | {project}-{env}-subnet-{network-layer}{n}-{region} |
+| Route Table          | {project}-{env}-rtb-{network-layer}{n}-{region}    |
 | Internet Gateway     | {project}-{env}-igw                                |
+| NAT Gateway          | {project}-{env}-natgw-{region}                     |
 | ELB                  | {project}-{env}-alb/clb                            |
 | Target Group         | {project}-{env}-tg                                 |
+| Endpoint             | {project}-{env}-endpoint-{target}                  |
 | EC2 Instance         | {project}-{env}-ec2-{role}{n}                      |
 | IAM Role             | {project}-{env}-role-{role}                        |
 | Security Group       | {project}-{env}-sg-{role}                          |

@@ -1,4 +1,5 @@
 - [命名規則](#命名規則)
+  - [ユーザー](#ユーザー)
   - [Rust x Diesel](#rust-x-diesel)
   - [TypeScript x Prisma](#typescript-x-prisma)
   - [PHP x Laravel](#php-x-laravel)
@@ -13,6 +14,19 @@
 しかし、AWS の RDB インスタンス等では、 "\_" が許可されていない場合があるため、"-" を使用し、対応する。
 
 # 命名規則
+
+## ユーザー
+
+ユーザーは、データベース名に則り、同じ規則で命名する。また、環境ごとの区別をつけるため、環境名を付与する。
+| Variable | Description |
+| ---- | ----- |
+| {env} | 環境名 [dev, stg, prod] |
+
+ルートユーザーは
+| DB name | Env | Example name |
+| -------- | ---- | ----------------- |
+| database_yellow | dev | database_yellow_dev |
+| database-2 | dev |database-2-dev |
 
 ## Rust x Diesel
 
