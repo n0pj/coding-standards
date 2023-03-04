@@ -1,5 +1,15 @@
 # React.js
 
+- [React.js](#reactjs)
+- [基本的に TypeScript を用いる](#基本的に-typescript-を用いる)
+  - [規約は TypeScript の規約に則る](#規約は-typescript-の規約に則る)
+- [React Hooks を用いる](#react-hooks-を用いる)
+- [コンポーネントにコメント](#コンポーネントにコメント)
+- [コンポーネントの命名](#コンポーネントの命名)
+- [コンポーネントのフォルダ構成](#コンポーネントのフォルダ構成)
+- [useEffect を分け、dependency を決める](#useeffect-を分けdependency-を決める)
+- [setXxx する際は、オブジェクトを再構築する](#setxxx-する際はオブジェクトを再構築する)
+
 # 基本的に TypeScript を用いる
 
 言わずもがな、TypeScript を用いる。
@@ -11,6 +21,11 @@
 規約は、TypeScript の規約に則る。
 
 typescript/README.md に記載されている規約を参照する。
+
+# React Hooks を用いる
+
+React Hooks を用いる。
+Class Component は、使用しない。
 
 # コンポーネントにコメント
 
@@ -69,3 +84,39 @@ HelloComponent/
 
 - components/
 - components/HelloComponent.tsx
+
+# useEffect を分け、dependency を決める
+
+useEffect は、副作用を起こす関数である。
+
+副作用を起こす関数は、複数の関数をまとめて記述することができる。
+
+```typescript
+useEffect(() => {
+  // 副作用を起こす関数
+}, [dependency])
+```
+
+# setXxx する際は、オブジェクトを再構築する
+
+setXxx する際は、オブジェクトを再構築する。
+再構築しないと、値が更新されない場合がある。
+
+最近はこの現象が起きるのかは分からない。
+
+起きた場合は、以下のように spread syntax でオブジェクトを再構築する。
+
+```typescript
+const object = {
+  key: value,
+}
+
+// NG
+setXxx(object)
+
+// OK
+setXxx({
+  ...object,
+  key: newValue,
+})
+```
