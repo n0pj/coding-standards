@@ -64,3 +64,8 @@ HelloComponent/
 - components/List/
 - components/List/index.tsx ( List.tsx として扱われる、親コンポーネント )
 - components/List/Item.tsx ( List の子コンポーネント )
+
+例: 単体のコンポーネントを components/ に配置する場合
+
+- components/
+- components/HelloComponent.tsx
