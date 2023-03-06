@@ -59,6 +59,7 @@ https://docs.microsoft.com/ja-jp/windows/wsl/install
 - Prettier - Code formatter
 
   Web 開発における基本のフォーマッター
+  
   https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
 - Apollo GraphQL
@@ -68,16 +69,19 @@ https://docs.microsoft.com/ja-jp/windows/wsl/install
 - indent-rainbow
 
   インデントの深さによって色付けをしてくれる
+  
   https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
 
 - Live Share
 
   ペアプログラミングに最適
+  
   https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
 
 - Markdown Preview Mermaid Support
 
   マークダウンでマーメイド記法がプレビューできる
+  
   https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid
 
 - Prisma
@@ -87,6 +91,7 @@ https://docs.microsoft.com/ja-jp/windows/wsl/install
 - Rainbow CSV
 
   CSV のカラムごとに色付けをしてくれる
+  
   https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
 
 - rust-analyzer
@@ -96,4 +101,5 @@ https://docs.microsoft.com/ja-jp/windows/wsl/install
 - Markdown All in One
 
   マークダウンでドキュメントを書く際、長くなる場合はこの拡張機能の目次機能を使用する
+  
   https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
