@@ -62,9 +62,9 @@ https://docs.microsoft.com/ja-jp/windows/wsl/install
   
   https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-- Apollo GraphQL
+- GraphQL: Language Feature Support
 
-  https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo
+  https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql
 
 - indent-rainbow
 
